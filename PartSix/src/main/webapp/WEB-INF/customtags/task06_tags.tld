@@ -1,0 +1,43 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<tlib-version>2.0</tlib-version>
+	<jsp-version>2</jsp-version>	
+	<short-name>Task 06 tags</short-name>	
+	<tag>
+		<name>connect</name>
+		<tag-class>tags.ConnectTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>dbName</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tableName</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>user</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>password</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>select</name>
+		<tag-class>tags.SelectTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>insert</name>
+		<tag-class>tags.InsertTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>delete</name>
+		<tag-class>tags.DeleteTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+</taglib>
